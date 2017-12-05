@@ -11,6 +11,8 @@ import sys
 import time
 import Tkinter
 
+import plotly
+
 port = "5556"
 print zmq.pyzmq_version()
 context = zmq.Context()
@@ -20,5 +22,7 @@ socket.bind("tcp://*:%s" % port)
 while True:
     socket.send("Any Hit recieved")
     msg = socket.recv()
+    player = socket.getType()
+    print player
     print msg
     time.sleep(1)
