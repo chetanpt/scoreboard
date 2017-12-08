@@ -1,0 +1,10 @@
+This package i.e. scoremanager is designed as agent between players and database.
+This package will update the database based on message reieved from players.
+It is also responsible to publish the updated score and to the players.
+
+Clientside is responsible to read database and publish the data to players
+
+Serverside is responsible to store subscribed information to database
+
+Note. I am also thinking about storing the data from players in log analysers for post processing and analysis.
+Using splunk like log analyzers and query builders

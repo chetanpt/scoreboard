@@ -1,3 +1,4 @@
 __author__ = 'Chetan'
-from scoremanager import clientside
-from scoremanager import serverside
+#from scoremanager import serverside
+from serverside import serverside
+from clientside import clientside
